@@ -84,6 +84,11 @@
         <!-- src -->
         <source-file src="src/android/WXEntryActivity.java" target-dir="src/com/myideaway/cordova/umeng/share"/>
         <!-- resoruces -->
-        <source-file src-dir="res/android/anim" target-dir="res/anim" />
+        <source-file src="res/android/anim/umeng_socialize_fade_in.xml" target-dir="res/anim"/>
+        <source-file src="res/android/anim/umeng_socialize_fade_out.xml" target-dir="res/anim"/>
+        <source-file src="res/android/anim/umeng_socialize_shareboard_animation_in.xml" target-dir="res/anim"/>
+        <source-file src="res/android/anim/umeng_socialize_shareboard_animation_out.xml" target-dir="res/anim"/>
+        <source-file src="res/android/anim/umeng_socialize_slide_in_from_bottom.xml" target-dir="res/anim"/>
+        <source-file src="res/android/anim/umeng_socialize_slide_out_from_bottom.xml" target-dir="res/anim"/>
     </platform>
 </plugin>
