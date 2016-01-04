@@ -60,6 +60,7 @@
             <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
             <meta-data android:name="UMENG_APPKEY" android:value="$API_KEY"/>
         </config-file>
+        <!-- libs -->
         <source-file src="libs/android/android-support-v4.jar" target-dir="libs"/>
         <source-file src="libs/android/httpmime-4.1.3.jar" target-dir="libs"/>
         <source-file src="libs/android/mta-sdk-1.6.2.jar" target-dir="libs"/>
@@ -80,5 +81,7 @@
         <source-file src="libs/android/mips64/libweibosdkcore.so" target-dir="libs/mips64"/>
         <source-file src="libs/android/x86/libweibosdkcore.so" target-dir="libs/x86"/>
         <source-file src="libs/android/x86_64/libweibosdkcore.so" target-dir="libs/x86_64"/>
+        <!-- src -->
+        <source-file src="src/android/WXEntryActivity.java" target-dir="src/com/myideaway/cordova/umeng/share"/>
     </platform>
 </plugin>
