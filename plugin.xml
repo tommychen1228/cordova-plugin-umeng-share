@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.myideaway.cordova.umeng.share"
+    version="1.0.0">
+
+    <name>UMeng Share Plugin</name>
+    <description>UMeng share for cordova plugin</description>
+    <author>Tommy Chen</author>
+    <keywords>umeng,share,cordova</keywords>
+    <license>Apache 2.0 License</license>
+
+    <preference name="API_KEY" />
+
+    <engines>
+        <engine name="cordova" version=">=4.0"/>
+    </engines>
+
+    <js-module src="www/umeng-share.js" name="UMengShare">
+        <clobbers target="UMengShare"/>
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="UMengSharePlugin">
+                <param name="android-package" value="com.myideaway.cordova.umeng.share.UMengSharePlugin"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+         <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+         <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+         <uses-permission android:name="android.permission.INTERNET" />
+         <uses-permission android:name="android.permission.READ_LOGS" />
+         <uses-permission android:name="android.permission.CALL_PHONE" />
+         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+         <uses-permission android:name="android.permission.GET_TASKS" />
+         <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+         <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+         <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+         <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+     </config-file>
+
+     <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <!-- 微信平台 -->
+        <activity
+            android:name="com.myideaway.cordova.umeng.share.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service 
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false">
+        </service>
+        <!-- QQ、Qzone -->
+        <activity
+          android:name="com.tencent.tauth.AuthActivity"
+          android:launchMode="singleTask"
+          android:noHistory="true" >
+          <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="tencent100424468" />
+        </intent-filter>
+    </activity>
+    <activity          
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+    </activity>
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="$API_KEY" >
+    </meta-data>
+</config-file>
+<source-file src="src/android/jpush-android-2.0.5.jar" target-dir="libs"/>
+<source-file src="src/android/armeabi/libjpush205.so" target-dir="libs/armeabi"/>
+<source-file src="src/android/armeabi-v7a/libjpush205.so" target-dir="libs/armeabi-v7a"/>
+<source-file src="src/android/arm64-v8a/libjpush205.so" target-dir="libs/arm64-v8a"/>
+
+<!--<source-file src="src/android/JPushPlugin.java" target-dir="src/cn/jpush/phonegap"/>-->
+<source-file src="src/android/MyReceiver.java" target-dir="src/cn/jpush/phonegap"/>
+<source-file src="src/android/test_notification_layout.xml" target-dir="res/layout"/>
+<source-file src="src/android/jpush_notification_icon.png" target-dir="res/drawable"/>
+</platform>
+</plugin>
