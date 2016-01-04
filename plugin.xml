@@ -112,6 +112,50 @@
         <source-file src="res/android/values/umeng_socialize_strings.xml" target-dir="res/values"/>
         <source-file src="res/android/values/umeng_socialize_style.xml" target-dir="res/values"/>
         <!-- res/drawable-->
+        <source-file src="res/android/drawable/umeng_socialize_action_back_normal.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_action_back_selected.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_action_back.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_at_button.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_at_normal.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_at_selected.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_bind_bg.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_blue.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_grey_blue" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_grey.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_login_normal.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_login_pressed.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_login.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_red_blue.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_red.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_white_blue.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_white.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_default_avatar.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_douban_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_douban_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_facebook.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_fetch_image.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_follow_check.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_follow_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_follow_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_google.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_light_bar_bg.9.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_location_ic.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_location_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_location_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_nav_bar_bg.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_oauth_check_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_oauth_check_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_oauth_check.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_qq_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_qq_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_qzone_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_qzone_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_refersh.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_renren_off.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_renren_on.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_search_icon.png" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_shape_solid_black.xml" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_shape_solid_grey.xml" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_share_to_button.xml" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_share_transparent_corner.xml" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_shareboard_item_background.xml" target-dir="res/drawable"/>
