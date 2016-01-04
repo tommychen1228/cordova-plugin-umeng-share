@@ -83,6 +83,7 @@
         <source-file src="libs/android/x86_64/libweibosdkcore.so" target-dir="libs/x86_64"/>
         <!-- src -->
         <source-file src="src/android/WXEntryActivity.java" target-dir="src/com/myideaway/cordova/umeng/share"/>
+        <source-file src="src/android/UMengSharePlugin.java" target-dir="src/com/myideaway/cordova/umeng/share"/>
         <!-- res/anim-->
         <source-file src="res/android/anim/umeng_socialize_fade_in.xml" target-dir="res/anim"/>
         <source-file src="res/android/anim/umeng_socialize_fade_out.xml" target-dir="res/anim"/>
