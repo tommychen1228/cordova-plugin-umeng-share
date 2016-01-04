@@ -83,5 +83,7 @@
         <source-file src="libs/android/x86_64/libweibosdkcore.so" target-dir="libs/x86_64"/>
         <!-- src -->
         <source-file src="src/android/WXEntryActivity.java" target-dir="src/com/myideaway/cordova/umeng/share"/>
+        <!-- resoruces -->
+        <source-file src-dir="res/android/anim" target-dir="res/anim" />
     </platform>
 </plugin>
