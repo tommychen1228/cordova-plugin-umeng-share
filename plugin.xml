@@ -40,7 +40,7 @@
             <!-- 微信平台 -->
             <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.myideaway.cordova.umeng.share.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
             <!-- 新浪微博 -->
-            <activity android:configChanges="keyboardHidden|orientation" android:name=".WBShareActivity" android:screenOrientation="portrait">
+            <activity android:configChanges="keyboardHidden|orientation" android:name="com.myideaway.cordova.umeng.share.WBShareActivity" android:screenOrientation="portrait">
                 <intent-filter>
                     <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
                     <category android:name="android.intent.category.DEFAULT"/>

@@ -1,4 +1,4 @@
-package com.myideaway.cordova.umeng.share.WXEntryActivity;
+package com.myideaway.cordova.umeng.share;
 
 import com.umeng.socialize.weixin.view.WXCallbackActivity;
 
