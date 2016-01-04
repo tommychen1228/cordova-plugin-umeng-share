@@ -141,13 +141,13 @@
         <source-file src="res/android/drawable/umeng_socialize_wxcircle_gray.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_wxcircle.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_x_button.png" target-dir="res/drawable"/>
-         <!-- res/drawable-hdpi -->
-        <source-file src="res/android/drawable/umeng_socialize_light_bar_bg_pad.9.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_nav_bar_bg_pad.9.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_oauth_check_off.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_oauth_check_on.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_share_music.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_share_pic.png" target-dir="res/drawable-hdpi"/>
-        <source-file src="res/android/drawable/umeng_socialize_share_video.png" target-dir="res/drawable-hdpi"/>
+        <!-- res/drawable-hdpi -->
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_light_bar_bg_pad.9.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_nav_bar_bg_pad.9.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_oauth_check_off.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_oauth_check_on.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_share_music.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_share_pic.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="res/android/drawable-hdpi/umeng_socialize_share_video.png" target-dir="res/drawable-hdpi"/>
     </platform>
 </plugin>
