@@ -1,4 +1,4 @@
-var UMengShare = {};
+UMengShare = {};
 
 UMengShare.init = function(successHandler, errorHandler){
 	cordova.exec(successHandler, errorHandler, "UMengSharePlugin", "init", []);
