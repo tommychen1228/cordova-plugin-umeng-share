@@ -120,7 +120,7 @@
         <source-file src="res/android/drawable/umeng_socialize_at_selected.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_bind_bg.9.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_button_blue.9.png" target-dir="res/drawable"/>
-        <source-file src="res/android/drawable/umeng_socialize_button_grey_blue" target-dir="res/drawable"/>
+        <source-file src="res/android/drawable/umeng_socialize_button_grey_blue.xml" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_button_grey.9.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_button_login_normal.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_button_login_pressed.png" target-dir="res/drawable"/>
