@@ -113,6 +113,7 @@
         <source-file src="res/android/values/umeng_socialize_strings.xml" target-dir="res/values"/>
         <source-file src="res/android/values/umeng_socialize_style.xml" target-dir="res/values"/>
         <!-- res/drawable-->
+        <source-file src="res/android/drawable/sina_logo.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_action_back_normal.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_action_back_selected.png" target-dir="res/drawable"/>
         <source-file src="res/android/drawable/umeng_socialize_action_back.xml" target-dir="res/drawable"/>
