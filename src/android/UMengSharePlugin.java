@@ -25,7 +25,7 @@ public class UMengSharePlugin extends CordovaPlugin {
     }
 
     private void init(JSONArray args, CallbackContext callbackContext) {
-        PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
+        PlatformConfig.setWeixin("wxb14a21c9f95a5078", "af5039d872b7a3b555c74963d7c04b0c");
         //微信 appid appsecret
         PlatformConfig.setSinaWeibo("3921700954", "04b48b094faeb16683c32669824ebdad");
         //新浪微博 appkey appsecret
@@ -34,24 +34,30 @@ public class UMengSharePlugin extends CordovaPlugin {
         callbackContext.success();
     }
 
-    private void share(JSONArray args, CallbackContext callbackContext) {
-        String text = args.optString(0);
-        String title = args.optString(1);
-        String url = args.optString(2);
+    private void share(final JSONArray args, final CallbackContext callbackContext) {
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                String text = args.optString(0);
+                String title = args.optString(1);
+                String url = args.optString(2);
 
-        final SHARE_MEDIA[] displaylist = new SHARE_MEDIA[]
-                {
-                        SHARE_MEDIA.WEIXIN,
-                        SHARE_MEDIA.WEIXIN_CIRCLE,
-                        SHARE_MEDIA.SINA,
-                        SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE
-                };
-        new ShareAction(cordova.getActivity()).setDisplayList(displaylist)
-                .withText(text)
-                .withTitle(title)
-                .withTargetUrl(url)
-                .open();
+                final SHARE_MEDIA[] displaylist = new SHARE_MEDIA[]
+                        {
+                                SHARE_MEDIA.WEIXIN,
+                                SHARE_MEDIA.WEIXIN_CIRCLE,
+                                SHARE_MEDIA.SINA,
+                                SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE
+                        };
+                new ShareAction(cordova.getActivity()).setDisplayList(displaylist)
+                        .withText(text)
+                        .withTitle(title)
+                        .withTargetUrl(url)
+                        .open();
 
-        callbackContext.success();
+                callbackContext.success();
+            }
+        });
+
     }
 }
